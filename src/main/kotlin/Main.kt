@@ -12,30 +12,40 @@ fun main() {
      developer.die()*/
 
     //Interfaces
-    val sonyTV = TVImpl("Sony", "Bravia")
-    sonyTV.getDetails()
+    //val sonyTV = TVImpl("Sony", "Bravia")
+    /*sonyTV.getDetails()
     println("")
     sonyTV.adjustChannel("MTV")
     println("")
-    println("Content: " + sonyTV.turnOn()?.content)
+    sonyTV.turnOn()
     println("")
-    println("Content: " + sonyTV.adjustChannel("MTV")?.content)
+    sonyTV.adjustChannel("MTV")
     println("")
-    println("Content: " + sonyTV.adjustChannel("Discovery")?.content)
+    sonyTV.adjustChannel("Discovery")
     println("")
     sonyTV.getDetails()
     println("")
-    println("Content: " + sonyTV.switchChannel(10)?.content)
+    sonyTV.switchChannel(10)
     println("")
-    println("Content: " + sonyTV.switchChannel(0)?.content)
+    sonyTV.switchChannel(0)
     println("")
-    sonyTV.turnOff()
-    println("")
-    println("Content: " + sonyTV.turnOn()?.content)
-    println("")
-    println("Content: " + sonyTV.turnOn()?.content)
-    println("")
-    sonyTV.turnOff()
-    println("")
-    println("Content: " + sonyTV.displayInputStream(null))
+    sonyTV.displayInputStream(null)*/
+
+    val panasonicVHS = VHSImpl("Panasonic", "t-1000")
+    panasonicVHS.turnOn()
+   // panasonicVHS.insertTape(VideoTape("Porn"))
+   // sonyTV.turnOn()
+   // panasonicVHS.play(sonyTV)
+  //  panasonicVHS.ejectTape()
+   // panasonicVHS.play(sonyTV)
+    panasonicVHS.turnOff()
+    panasonicVHS.play(null)
+
+    //Listener
+    /* val event = Event("Что-то произошло")
+     val subscriber = Subscriber("Подписчик", listOf(event))
+     val publisher = Publisher("Издатель")
+     publisher.subscribe(subscriber)
+     publisher.changeState(event)*/
+
 }
