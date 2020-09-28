@@ -14,21 +14,21 @@ fun main() {
     //Interfaces
     //val sonyTV = TVImpl("Sony", "Bravia")
     /*sonyTV.getDetails()
-    println("")
+
     sonyTV.adjustChannel("MTV")
-    println("")
+
     sonyTV.turnOn()
-    println("")
+
     sonyTV.adjustChannel("MTV")
-    println("")
+
     sonyTV.adjustChannel("Discovery")
-    println("")
+
     sonyTV.getDetails()
-    println("")
+
     sonyTV.switchChannel(10)
-    println("")
+
     sonyTV.switchChannel(0)
-    println("")
+
     sonyTV.displayInputStream(null)*/
 
     val panasonicVHS = VHSImpl("Panasonic", "t-1000")
@@ -40,6 +40,14 @@ fun main() {
    // panasonicVHS.play(sonyTV)
     panasonicVHS.turnOff()
     panasonicVHS.play(null)
+    val videoCombo=VideoComboImpl("Sharp","VideoCombo")
+    videoCombo.turnOn()
+    videoCombo.adjustChannel("NTV")
+    videoCombo.insertTape(VideoTape("9 рота"))
+    videoCombo.play()
+    videoCombo.ejectTape()
+    videoCombo.turnOff()
+    videoCombo.getDetails()
 
     //Listener
     /* val event = Event("Что-то произошло")
