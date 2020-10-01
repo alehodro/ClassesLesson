@@ -29,7 +29,7 @@ fun main() {
 
     sonyTV.switchChannel(0)
 
-    sonyTV.displayInputStream(null)*/
+    sonyTV.displayInputStream(null)
 
     val panasonicVHS = VHSImpl("Panasonic", "t-1000")
     panasonicVHS.turnOn()
@@ -47,7 +47,7 @@ fun main() {
     videoCombo.play()
     videoCombo.ejectTape()
     videoCombo.turnOff()
-    videoCombo.getDetails()
+    videoCombo.getDetails()*/
 
     //Listener
     /* val event = Event("Что-то произошло")
@@ -55,5 +55,12 @@ fun main() {
      val publisher = Publisher("Издатель")
      publisher.subscribe(subscriber)
      publisher.changeState(event)*/
+
+    val cezve = Cezve()
+    val coffeeMaker = CoffeeMaker()
+    val manuallGrinder = ManuallGrinder()
+    val autoGrinder = AutomaticGrinder()
+    println(Coffee(manuallGrinder,coffeeMaker).getCoffee())
+    println(Coffee(autoGrinder,cezve).getCoffee())
 
 }
